@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Hero = () => {
   return (
     // Fixed height set to 80vh for both container and background
-    <div className="relative w-full h-[80vh] min-h-[600px] overflow-hidden flex items-center">
+    <div className="relative w-full h-[80vh] min-h-[820px] overflow-hidden flex items-center">
       
       {/* Background Image - will now automatically be 80vh because of parent */}
       <div className="absolute inset-0 z-0">
@@ -20,7 +20,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-20 mt-10 container mx-auto px-4 sm:px-6 lg:px-30">
         <div className="grid lg:grid-cols-2 gap-4 lg:gap-12 items-start">
           
           {/* Left Content */}
