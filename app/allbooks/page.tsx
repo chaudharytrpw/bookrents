@@ -65,7 +65,7 @@ export default function AllBooksPage() {
   const activeFiltersCount = [selectedCategory, selectedCondition, priceRange].filter(f => f !== "All").length;
 
   return (
-    <div className="min-h-screen  mt-[50]">
+    <div className="min-h-screen bg-amber-50 mt-[50]">
       <div className="sticky top-14 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-1 py-3">
           <div className="flex items-center gap-4 mb-4">
@@ -125,7 +125,7 @@ export default function AllBooksPage() {
           </motion.aside>
 
           {/* BOOKS GRID - Column Count Increased for Smaller Cards */}
-          <div className="flex-1">
+          <div className="flex-1 bg">
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-4">
               {filteredBooks.map((book, index) => (
                 <BookCard key={book.id} book={book} index={index} />
