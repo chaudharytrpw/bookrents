@@ -8,7 +8,7 @@ interface Props {
 
 export default function AdminNavbar({ setSidebarOpen }: Props) {
   return (
-    <header className="sticky ml-2 top-0 bg-[#1d606e] border-b border-slate-200 z-30">
+    <header className="sticky ml-2 top-0 bg-[#1d606e] border-slate-200 z-30">
       <div className="flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4">
 
         {/* Left Side */}
@@ -21,7 +21,7 @@ export default function AdminNavbar({ setSidebarOpen }: Props) {
           </button>
 
           <h1 className="text-xl sm:text-2xl font-bold text-white">
-            Admin Dashboard
+            Mritunjay chaudhary
           </h1>
         </div>
 

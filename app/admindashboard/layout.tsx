@@ -29,7 +29,7 @@ export default function AdminDashboardLayout({
           <AdminNavbar setSidebarOpen={setSidebarOpen} />
 
           {/* Page Content */}
-          <main className="p-4 sm:p-6 lg:p-8">
+          <main className=" sm:p-4 lg:p-2">
             {children}
           </main>
 

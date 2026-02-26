@@ -1,7 +1,16 @@
+"use client"
 import React from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const Hero: React.FC = () => {
+  const router=useRouter()
+
+const  handalerouter=()=>{
+  console.log("hello");
+  
+     router.push("/admindashboard/add-product")
+  }
   return (
     <section className="relative z-10 w-full min-h-screen flex items-center overflow-hidden">
       
@@ -38,10 +47,10 @@ const Hero: React.FC = () => {
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <button className="bg-emerald-500 hover:bg-emerald-600 px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg">
+              <button onClick={handalerouter} className="bg-emerald-500 cursor-pointer hover:bg-emerald-600 px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg">
                 List Your Book & Earn
               </button>
-              <button className="bg-white text-gray-800 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg">
+              <button onClick={handalerouter} className="bg-white cursor-pointer text-gray-800 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg">
                 Rent a Book
               </button>
             </div>

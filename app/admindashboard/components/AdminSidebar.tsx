@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { X, LayoutDashboard, Users, Settings } from "lucide-react";
+import { X, LayoutDashboard, Users, Settings, BookA } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -14,7 +14,8 @@ export default function AdminSidebar({ sidebarOpen, setSidebarOpen }: Props) {
 
   const menuItems = [
     { name: "Dashboard", icon: LayoutDashboard, href: "/admindashboard" },
-    { name: "Users", icon: Users, href: "/admindashboard/users" },
+    
+    { name: "product", icon: BookA, href: "/admindashboard/product" },
     { name: "Settings", icon: Settings, href: "/admindashboard/settings" },
   ];
 
@@ -23,7 +24,7 @@ export default function AdminSidebar({ sidebarOpen, setSidebarOpen }: Props) {
       {/* Desktop Sidebar */}
       <aside className="hidden lg:flex fixed left-0 top-0 h-full w-64 bg-[#1d606e] border-r border-slate-200 shadow-sm flex-col z-40 text-white">
         <div className="p-6 text-2xl font-bold border-b border-slate-200">
-          Admin Panel
+          Logo
         </div>
 
         <nav className="flex-1 p-4 space-y-2">

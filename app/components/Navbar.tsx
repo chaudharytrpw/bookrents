@@ -54,7 +54,7 @@ export default function Navbar() {
               Contact
             </Link>
             <Link
-              href="#"
+              href="/login"
               className="bg-white text-[#1d606e] px-6 py-2 rounded-lg hover:bg-gray-100 transition font-semibold"
             >
               Login
@@ -127,7 +127,7 @@ export default function Navbar() {
               Contact
             </Link>
             <Link
-              href="#"
+              href="/login"
               className="block px-3 py-2 bg-white text-[#1d606e] text-center rounded-lg hover:bg-gray-100 transition mt-2 font-semibold"
             >
               Login
